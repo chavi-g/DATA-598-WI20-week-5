@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of mysimplecompendium is to ...
+The goal of mysimplecompendium is to demonstrate the creation of an R package.
 
 ## Installation
 
