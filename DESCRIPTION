@@ -2,10 +2,21 @@ Package: mysimplecompendium
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Author@R: person("Chavi", "Gupta", 
+                  email = "chavig080@gmail.com", 
+                  role = c("aut", "cre", "cph"),
+                  comment = c(ORCID = "0000-0003-3884-8456"))
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    dplyr (>= 0.8.4)
+Depends: 
+    R (>= 3.6.0)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2

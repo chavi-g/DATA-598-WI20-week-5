@@ -1,0 +1,49 @@
+---
+title: "my-compendium-vignette"
+output: 
+    bookdown::html_document2:
+      base_format: rmarkdown::html_vignette
+      number_sections: false
+vignette: >
+  %\VignetteIndexEntry{my-compendium-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+bibliography: example.bib
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mysimplecompendium)
+mysimplecompendium::hello()
+```
+
+```{r warning=FALSE, message=FALSE}
+library(tidyverse)
+data <- data(starwars)
+knitr::read_chunk("my-external-code.R")
+```
+
+# Figure
+
+```{r plot-the-data, warning=FALSE, fig.cap="A ggplot of starwars stuff", fig.align='center', message=FALSE}
+```
+
+In Figure \@ref(fig:plot-the-data) we can see the relationship between the mass and height of the Human species. 
+
+# Table
+
+```{r create-data-table}
+```
+
+Speaking about starwars, have you read this cool research paper [@echeverria2017discovery] on the Starwars Botnet?
+
+[@barba2018terminologies]  and [@plesser2018reproducibility] are a few papers on reproducibilty. Do check them out!
+
+# References
+
